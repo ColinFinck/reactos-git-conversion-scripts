@@ -1,0 +1,114 @@
+####################################################################
+# ReactOS Git conversion rules                                     #
+# for KDE's svn-all-fast-export tool                               #
+# (https://github.com/svn-all-fast-export/svn2git)                 #
+####################################################################
+
+#
+# Put everything into one "reactos" repository.
+#
+create repository reactos
+end repository
+
+#
+# Don't include web, press-media, tools.
+# They are now in their dedicated repos including all their history.
+#
+match /(branches|tags)/([^/]+)/web/
+end match
+
+match /trunk/web/
+end match
+
+match /(branches|tags)/([^/]+)/press-media/
+end match
+
+match /trunk/press-media/
+end match
+
+match /(branches|tags)/([^/]+)/tools/
+end match
+
+match /trunk/tools/
+end match
+
+#
+# Handle our special GSoC branches.
+# Ignore the commits that create the branches/GSoC_YYYY folder and only process the further branches/GSoC_YYYY/project commits.
+#
+match /
+  min revision 51546
+  max revision 51546
+end match
+
+match /branches/GSoC_2011/([^/]+)/
+  repository reactos
+  branch GSoC_2011/\1
+end match
+
+match /
+  min revision 71195
+  max revision 71195
+end match
+
+match /branches/GSoC_2016/([^/]+)/
+  repository reactos
+  branch GSoC_2016/\1
+end match
+
+match /
+  min revision 74645
+  max revision 74645
+end match
+
+match /branches/GSoC_2017/([^/]+)/
+  repository reactos
+  branch GSoC_2017/\1
+end match
+
+#
+# Handle this unicorn: A branch with spaces in its name...
+#
+match /branches/win32k rewrite attempt/
+  repository reactos
+  branch win32k_rewrite_attempt
+end match
+
+#
+# Don't include the RosBE tags.
+# They refer to RosBE work in project-tools, which we also don't include in the reactos repo.
+#
+match /tags/RosBE-([^/]+)/
+end match
+
+#
+# Handle the standard layout (branches, tags, trunk)
+#
+match /branches/([^/]+)/
+  repository reactos
+  branch \1
+end match
+
+match /tags/([^/]+)/
+  repository reactos
+  branch refs/tags/\1
+end match
+
+match /trunk/
+  repository reactos
+  branch master
+end match
+
+#
+# Don't include the vendor drops.
+# This will only include third-party libs as soon as they have been moved into trunk.
+#
+match /vendor/
+end match
+
+#
+# The VMS subsystem was once in the root, but got moved to trunk right after that.
+# Skip the first commit to make things easier.
+#
+match /vms/
+end match
