@@ -5,7 +5,42 @@
 ####################################################################
 
 #
-# Put everything into one "reactos" repository.
+# Extract the documentation into a separate repository.
+#
+create repository documentation
+end repository
+
+match /
+  min revision 67112
+  max revision 67112
+end match
+
+match /trunk/documentation/
+  repository documentation
+  branch master
+end match
+
+match /trunk/rosdocs/
+  repository documentation
+  branch master
+end match
+
+#
+# Documentation has never been modified in branches and tags.
+# Just ignore it there.
+#
+match /(branches|tags)/([^/]+)/documentation/
+end match
+
+match /(branches|tags)/([^/]+)/rosdocs/
+end match
+
+match /branches/GSoC_2017/([^/]+)/documentation/
+end match
+
+
+#
+# Put the rest into the "reactos" repository.
 #
 create repository reactos
 end repository
@@ -64,6 +99,21 @@ end match
 match /branches/GSoC_2017/([^/]+)/
   repository reactos
   branch GSoC_2017/\1
+end match
+
+#
+# Handle this unicorn: A branch created from / instead of /trunk...
+# Just ignore the creation commit r33435 and the deletion commit r33439.
+# It is properly recreated in r33440.
+#
+match /
+  min revision 33435
+  max revision 33435
+end match
+
+match /
+  min revision 33439
+  max revision 33439
 end match
 
 #
