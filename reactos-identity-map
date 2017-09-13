@@ -1,2 +1,129 @@
-# To be filled with all authors from the spreadsheet as soon as it's ready
+aandrejevic Aleksandar Andrejevic <aandrejevic@reactos.org>
+ablackmann Arch Blackmann <ablackmann@svn.reactos.org>
+agreen Andrew Green <greeniekin@gmail.com>
+ahill Andrew Hill <ash77@reactos.org>
+akhaldi Amine Khaldi <amine.khaldi@reactos.org>
+akorotaev Andrey Korotaev <a.korotaev@hedgewars.org>
+amunger Andrew Munger <waxdragon@gmail.com>
+apriyadarshi Aman Priyadarshi <aman.eureka@gmail.com>
+ariadne Boudewijn Dekker <ariadne@xs4all.nl>
+arty Art Yerkes <art.yerkes@gmail.com>
+ashaposhnikov Alexander Shaposhnikov <sanchaez@reactos.org>
+audit The ReactOS Code Auditors <audit@svn.reactos.org>
+bfreisen Benedikt Freisen <b.freisen@gmx.net>
+blight Gregor Anich <blight@blight.eu.org>
+bpalmer Brian Palmer <brianp@sginet.com>
 cfinck Colin Finck <colin@reactos.org>
+cgutman Cameron Gutman <aicommander@gmail.com>
+chorns Casper Hornstrup <chorns@users.sourceforge.net>
+cmihail Claudiu Mihail <claudiu.bogdan.mihail@gmail.com>
+cnettel Carl Nettelblad <cnettel@hem.passagen.se>
+cwittich Christoph von Wittich <christoph_vw@reactos.org>
+dchapyshev Dmitry Chapyshev <dmitry@reactos.org>
+dcote Dominique Cote <buzdelabuz2@gmail.com>
+dgoette Danny Götte <danny.goette@reactos.org>
+dgorbachev Dmitry Gorbachev <gorbachev@reactos.org>
+dquintana David Quintana <gigaherz@gmail.com>
+dreimer Daniel Reimer <reimer.daniel@freenet.de>
+dwelch David Welch <welch@cwcom.net>
+ea Emanuele Aliberti <ea@iol.it>
+ei Eugene Ingerman <geneing@myrealbox.com>
+ekohl Eric Kohl <eric.kohl@reactos.org>
+evb evb <evb@svn.reactos.org>
+fireball Aleksey Bragin <aleksey@reactos.org>
+frik85 Klemens Friedl <frik85@gmail.com>
+gadamopoulos Giannis Adamopoulos <gadamopoulos@reactos.org>
+gbrunmar Gregor Brunmar <gbrunmar.ros@gmail.com>
+gdalsnes Gunnar Dalsnes <hardon@online.no>
+gedmurphy Ged Murphy <gedmurphy@reactos.org>
+greatlord Magnus Olsen <magnus@greatlord.com>
+greatlrd Magnus Olsen <magnus@greatlord.com>
+Greatlrd Magnus Olsen <magnus@greatlord.com>
+gschneider Gregor Schneider <grschneider@gmail.com>
+guido guido <guido@svn.reactos.org>
+gvg Gé van Geldorp <ge@gse.nl>
+hamtitampti Franz Lehner <franz@caos.at>
+hbelusca Hermès Bélusca-Maïto <hermes.belusca-maito@reactos.org>
+hbirr Hartmut Birr <osexpert@googlemail.com>
+hochoa Hernan Ochoa <hochoa@svn.reactos.org>
+hpoussin Hervé Poussineau <hpoussin@reactos.org>
+hyperion KJK::Hyperion <hackbunny@reactos.org>
+ilardig Gabriel Ilardi <gabrielilardi@hotmail.it>
+ion Alex Ionescu <aionescu@gmail.com>
+iut2011 Students of the Clermont IUT <iut2011@svn.reactos.org>
+janderwald Johannes Anderwald <johannes.anderwald@reactos.org>
+jc Jens Collin <jens.collin@lakhei.com>
+jcatena Jose Catena <jc1@diwaves.com>
+jean Jean-Michel Gay <jean@svn.reactos.org>
+jfilby Jason Filby <jason.filby@gmail.com>
+jgardou Jérôme Gardou <jerome.gardou@reactos.org>
+jimtabor James Tabor <james.tabor@reactos.org>
+jjones J. C. Jones <jaibuduvin@gmail.com>
+jmorlan Jeffrey Morlan <mrnobo1024@yahoo.com>
+joeg joeg <joeg@svn.reactos.org>
+jroeloffzen Jan Roeloffzen <jroeloffzen@hotmail.com>
+jvangael Jurgen van Gael <jurgen.vangael@student.kuleuven.ac.be>
+khornicek Kamil Hornicek <kamil.hornicek@reactos.org>
+ktietz Kai Tietz <ktietz70@googlemail.com>
+kuehng Gero Kuehn <reactos.filter@gkware.com>
+lsuggs Lucas Suggs <lucas.suggs@gmail.com>
+martinf Martin Fuchs <martin-fuchs@gmx.net>
+mbosma Maarten Bosma <maarten@bosma.de>
+mc Michele Cicciotti <mc@svn.reactos.org>
+mdill Marty Dill <mdill@uvic.ca>
+mf Martin Fuchs <fuchs.martin@gmail.com>
+mflyer Mindflyer <mf@mufunyo.net>
+mist Michael Steil <mist64@mac.com>
+mjansen Mark Jansen <mark.jansen@reactos.org>
+mjmartin Michael Martin <michael.martin@reactos.org>
+mkupfer Matthias Kupfer <mkupfer@reactos.org>
+mnordell Mike Nordell <tamlin@algonet.se>
+mpiulachs Marc Piulachs <marc.piulachs@live.com>
+mtempel Mark Tempel <mtempel@visi.com>
+mwirth Michael Wirth <michael@freeworld.net>
+narnaoud Nedko Arnaudov <nedko@users.sourceforge.net>
+navaraf Filip Navara <filip.navara@gmail.com>
+nj nj <nj@svn.reactos.org>
+npwoods Nathan Woods <npwoods@mess.org>
+nyadav Neeraj Yadav <neer4j.iit.delhi@gmail.com>
+osiejka Olaf Siejka <caemyr@openmailbox.org>
+paolopan Paolo Pantaleo <paolopan@freemail.it>
+pborobia Pablo Borobia <pborobia@gmail.com>
+peterw Peter Ward <dralnix@gmail.com>
+phater Peter Hater <7element@mail.bg>
+phreak Phillip Susi <phreak@iag.net>
+Phreak Phillip Susi <phreak@iag.net>
+pschweitzer Pierre Schweitzer <pierre@reactos.org>
+rcampbell Richard Campbell <betam4x@gmail.com>
+rex Rex Jolliff <rex@lvcablemodem.com>
+rgampa Rama Teja Gampa <ramateja.g@gmail.com>
+rharabien Rafal Harabien <rafalh@reactos.org>
+rmessiant Roel Messiant <roelmessiant@gmail.com>
+rnaumann Robert Naumann <gonzomdx@gmail.com>
+robd Robert Dickenson <robd@reactos.org>
+robertk Robert Kopferl <robertk@mok.lvcm.com>
+ros-arm-bringup ReactOS Portable Systems Group <ros-arm-bringup@svn.reactos.org>
+rosmgr The ReactOS Manager <rosmgr@svn.reactos.org>
+royce Royce Mitchell III <royce3@ev1.net>
+sdever Sylvain Deverre <deverre.sylv@gmail.com>
+sedwards Steven Edwards <winehacker@gmail.com>
+sgasiorek Sebastian Gasiorek <sebastian.gasiorek@reactos.org>
+sginsberg Stefan Ginsberg <stefanginsberg@gmail.com>
+silverblade Andrew Greenwood <silverblade@reactos.org>
+sir_richard Sir Richard <sir_richard@svn.reactos.org>
+spetreolle Sylvain Petreolle <spetreolle@yahoo.fr>
+ssawant Shriraj Sawant <sr.official@hotmail.com>
+sserapion Samuel Serapion <samuel.serapion@gmail.com>
+tamlin Mike Nordell <tamlin@algonet.se>
+tfaber Thomas Faber <thomas.faber@reactos.org>
+tkreuzer Timo Kreuzer <timo.kreuzer@reactos.org>
+tretiakov Saveliy Tretiakov <saveliyt@gmail.com>
+tthompson Trevor Thompson <tmt256@email.vccs.edu>
+turner Brandon Turner <turnerb7@msu.edu>
+vgal Vadim Galyant <vgal@rambler.ru>
+vizzini Vizzini <vizzini@plasmic.com>
+vmikayelyan Vardan Mikayelyan <mvardan.dev@gmail.com>
+weiden Thomas Bluemel <thomas@reactsoft.com>
+winesync The Wine Synchronizer <winesync@svn.reactos.org>
+zguo Ziliang Guo <drakekaizer666@gmail.com>
+zhu Zuodian Hu <diantheman@gmail.com>
