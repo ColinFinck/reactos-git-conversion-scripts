@@ -1,0 +1,36 @@
+From 4e1af2577d57ee17469e89ba1f3ee3d5ee0cf606 Mon Sep 17 00:00:00 2001
+From: Colin Finck <colin@reactos.org>
+Date: Sat, 16 Sep 2017 12:06:25 +0200
+Subject: [PATCH 2/2] Build rosapps, rostests, wallpapers when their CMake
+ variables are set instead of checking for directory existence.
+
+By default, ReactOS will now build without any of these modules.
+You can enable them using e.g. "configure -DENABLE_ROSTESTS=1".
+---
+ modules/CMakeLists.txt | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/modules/CMakeLists.txt b/modules/CMakeLists.txt
+index 286d3e8..e09868d 100644
+--- a/modules/CMakeLists.txt
++++ b/modules/CMakeLists.txt
+@@ -1,13 +1,13 @@
+ 
+-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/rostests/)
++if(ENABLE_ROSTESTS)
+     add_subdirectory(rostests)
+ endif()
+ 
+-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/rosapps/)
++if(ENABLE_ROSAPPS)
+     add_subdirectory(rosapps)
+ endif()
+ 
+-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/wallpapers/)
++if(ENABLE_WALLPAPERS)
+     add_subdirectory(wallpapers)
+ endif()
+ 
+-- 
+2.7.4
+
