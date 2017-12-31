@@ -1,0 +1,339 @@
+####################################################################
+# ReactOS Project-Tools Git conversion rules                       #
+# for KDE's svn-all-fast-export tool                               #
+# (https://github.com/svn-all-fast-export/svn2git)                 #
+####################################################################
+
+#
+# ahk_tests repository
+#
+create repository ahk_tests
+end repository
+
+match /trunk/ahk_tests/
+  repository ahk_tests
+  branch master
+end match
+
+#
+# buildbot_config repository
+#
+create repository buildbot_config
+end repository
+
+match /trunk/tools/buildbot/
+  repository buildbot_config
+  branch master
+end match
+
+match /trunk/buildbot/
+  repository buildbot_config
+  branch master
+end match
+
+#
+# git-tools repository
+#
+create repository git-tools
+end repository
+
+match /trunk/git-tools/
+  repository git-tools
+  branch master
+end match
+
+#
+# irc repository
+#
+create repository irc
+end repository
+
+match /trunk/irc/
+  repository irc
+  branch master
+end match
+
+match /trunk/rosapps/games/
+  repository irc
+  branch master
+end match
+
+#
+# Message_Translator repository
+#
+create repository Message_Translator
+end repository
+
+match /trunk/tools/Message Translator/
+  repository Message_Translator
+  branch master
+end match
+
+match /trunk/Message Translator/
+end match
+
+#
+# monitoring repository
+#
+create repository monitoring
+end repository
+
+match /trunk/nagios/
+  repository monitoring
+  branch master
+  prefix nagios/
+end match
+
+match /trunk/munin/
+  repository monitoring
+  branch master
+  prefix munin/
+end match
+
+match /trunk/nagios-templates/
+  repository monitoring
+  branch master
+  prefix nagios-templates/
+end match
+
+#
+# packmgr repository
+#
+create repository packmgr
+end repository
+
+match /
+  min revision 82
+  max revision 82
+end match
+
+match /
+  min revision 84
+  max revision 84
+end match
+
+match /
+  min revision 744
+  max revision 744
+end match
+
+match /trunk/rosapps/packmgr/
+  repository packmgr
+  branch master
+end match
+
+#
+# Qemu_GUI repository
+#
+create repository Qemu_GUI
+end repository
+
+match /trunk/rosapps/Qemu GUI/
+  repository Qemu_GUI
+  branch master
+end match
+
+match /trunk/tools/Qemu GUI/
+  repository Qemu_GUI
+  branch master
+end match
+
+match /trunk/Qemu GUI/
+end match
+
+#
+# reactosdbg repository
+#
+create repository reactosdbg
+end repository
+
+match /trunk/tools/reactosdbg/
+  repository reactosdbg
+  branch master
+end match
+
+match /trunk/reactosdbg/
+  repository reactosdbg
+  branch master
+end match
+
+#
+# Release_Engineering repository
+#
+create repository Release_Engineering
+end repository
+
+match /
+  min revision 639
+  max revision 639
+end match
+
+match /trunk/tools/VM-Templates/
+  repository Release_Engineering
+  branch master
+  prefix VM-Templates/
+end match
+
+match /trunk/tools/Release Engineering/
+  repository Release_Engineering
+  branch master
+end match
+
+match /trunk/Release Engineering/
+  repository Release_Engineering
+  branch master
+end match
+
+match /trunk/Release_Engineering/
+  repository Release_Engineering
+  branch master
+end match
+
+#
+# rosev_ircsystem repository
+#
+create repository rosev_ircsystem
+end repository
+
+match /trunk/rosev_ircsystem/
+  repository rosev_ircsystem
+  branch master
+end match
+
+#
+# rosev_jameicaplugin repository
+#
+create repository rosev_jameicaplugin
+end repository
+
+match /trunk/rosev_jameicaplugin/
+  repository rosev_jameicaplugin
+  branch master
+end match
+
+#
+# RosBE repository
+#
+create repository RosBE
+end repository
+
+match /trunk/tools/mingw-make/
+  repository RosBE
+  branch master
+end match
+
+match /trunk/tools/RosBE/
+	min revision 158
+	max revision 168
+  repository RosBE
+  branch master
+  prefix RosBE-Windows/
+end match
+
+match /trunk/tools/RosBE-Windows/
+  repository RosBE
+  branch master
+  prefix RosBE-Windows/
+end match
+
+match /trunk/tools/RosBE-Unix/
+  repository RosBE
+  branch master
+  prefix RosBE-Unix/
+end match
+
+match /trunk/tools/RosBE/
+	min revision 515
+	max revision 
+  repository RosBE
+  branch master
+end match
+
+match /trunk/RosBE/
+  repository RosBE
+  branch master
+end match
+
+#
+# RosTE repository
+#
+create repository RosTE
+end repository
+
+match /trunk/tools/RosTE/
+  repository RosTE
+  branch master
+end match
+
+match /trunk/RosTE/
+end match
+
+#
+# sysreg2 repository
+#
+create repository sysreg2
+end repository
+
+match /trunk/tools/sysreg2/
+  repository sysreg2
+  branch master
+end match
+
+match /trunk/sysreg2/
+  repository sysreg2
+  branch master
+end match
+
+#
+# sysreg3 repository
+#
+create repository sysreg3
+end repository
+
+match /trunk/tools/sysreg3/
+  repository sysreg3
+  branch master
+end match
+
+match /trunk/sysreg3/
+  repository sysreg3
+  branch master
+end match
+
+#
+# vmwaregateway repository
+#
+create repository vmwaregateway
+end repository
+
+match /trunk/tools/vmwaregateway/
+  repository vmwaregateway
+  branch master
+end match
+
+match /trunk/vmwaregateway/
+end match
+
+
+#
+# Move everything else to project-tools-archive.
+#
+create repository project-tools-archive
+end repository
+
+match /trunk/
+  repository project-tools-archive
+  branch master
+end match
+
+#
+# We never really used branches, tags, and vendor drops for project-tools, so don't include them.
+#
+match /branches/
+end match
+
+match /tags/
+end match
+
+match /vendor/
+end match
