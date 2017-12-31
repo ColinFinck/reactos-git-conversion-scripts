@@ -48,6 +48,11 @@ end match
 create repository irc
 end repository
 
+match /
+  min revision 1
+  max revision 1
+end match
+
 match /trunk/irc/
   repository irc
   branch master
@@ -70,6 +75,8 @@ match /trunk/tools/Message Translator/
 end match
 
 match /trunk/Message Translator/
+  repository Message_Translator
+  branch master
 end match
 
 #
@@ -139,6 +146,8 @@ match /trunk/tools/Qemu GUI/
 end match
 
 match /trunk/Qemu GUI/
+  repository Qemu_GUI
+  branch master
 end match
 
 #
@@ -266,6 +275,8 @@ match /trunk/tools/RosTE/
 end match
 
 match /trunk/RosTE/
+  repository RosTE
+  branch master
 end match
 
 #
@@ -312,6 +323,8 @@ match /trunk/tools/vmwaregateway/
 end match
 
 match /trunk/vmwaregateway/
+  repository vmwaregateway
+  branch master
 end match
 
 
