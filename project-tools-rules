@@ -226,11 +226,6 @@ end match
 create repository RosBE
 end repository
 
-match /trunk/tools/mingw-make/
-  repository RosBE
-  branch master
-end match
-
 match /trunk/tools/RosBE/
   min revision 158
   max revision 168
