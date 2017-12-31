@@ -223,8 +223,8 @@ match /trunk/tools/mingw-make/
 end match
 
 match /trunk/tools/RosBE/
-	min revision 158
-	max revision 168
+  min revision 158
+  max revision 168
   repository RosBE
   branch master
   prefix RosBE-Windows/
@@ -243,8 +243,8 @@ match /trunk/tools/RosBE-Unix/
 end match
 
 match /trunk/tools/RosBE/
-	min revision 515
-	max revision 
+  min revision 515
+  max revision 1232
   repository RosBE
   branch master
 end match
