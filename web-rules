@@ -1,0 +1,36 @@
+####################################################################
+# ReactOS Web Git conversion rules                                 #
+# for KDE's svn-all-fast-export tool                               #
+# (https://github.com/svn-all-fast-export/svn2git)                 #
+####################################################################
+
+#
+# Move everything to a Git web repository.
+#
+create repository web
+end repository
+
+#
+# Handle the standard layout (branches, tags, trunk)
+#
+match /branches/([^/]+)/
+  repository web
+  branch \1
+end match
+
+match /tags/([^/]+)/
+  repository web
+  branch refs/tags/\1
+end match
+
+match /trunk/
+  repository web
+  branch master
+end match
+
+#
+# Don't include the vendor drops.
+# This will only include third-party libs as soon as they have been moved into trunk.
+#
+match /vendor/
+end match
